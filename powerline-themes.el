@@ -121,7 +121,7 @@
                                      (when powerline-display-buffer-size
                                        (powerline-buffer-size face0 'l))
                                      (powerline-buffer-id `(mode-line-buffer-id ,face0) 'l)
-                                     (powerline-raw " ")
+                                     (powerline-raw " " face0)
                                      (funcall separator-left face0 face1)
                                      (powerline-narrow face1 'l)
                                      (powerline-vc face1)))
@@ -130,7 +130,7 @@
                                      (powerline-raw ":" face1)
                                      (powerline-raw "%3c" face1 'r)
                                      (funcall separator-right face1 face0)
-                                     (powerline-raw " ")
+                                     (powerline-raw " " face0)
                                      (powerline-raw "%6p" face0 'r)
                                      (when powerline-display-hud
                                        (powerline-hud face2 face1))
@@ -172,7 +172,7 @@
                                      (when powerline-display-buffer-size
                                        (powerline-buffer-size mode-line 'l))
                                      (powerline-buffer-id mode-line-buffer-id 'l)
-                                     (powerline-raw " ")
+                                     (powerline-raw " " face0)
                                      (funcall separator-left mode-line face1)
                                      (powerline-narrow face1 'l)
                                      (powerline-vc face1)))
@@ -181,7 +181,7 @@
                                      (powerline-raw ":" face1)
                                      (powerline-raw "%3c" face1 'r)
                                      (funcall separator-right face1 mode-line)
-                                     (powerline-raw " ")
+                                     (powerline-raw " " face0)
                                      (powerline-raw "%6p" mode-line 'r)
                                      (when powerline-display-hud
                                        (powerline-hud face2 face1))))
